@@ -1,0 +1,78 @@
+html,
+body {
+  font-size: 0.8rem;
+}
+
+#main-header .navbar li a {
+  padding: 1rem 0.9rem;
+  color: var(--gray-10);
+}
+
+.companies .container .grid-container {
+  grid-template-areas:
+    "card-google card-paypal card-amex"
+    "card-mercadolibre card-bitly card-capitalone"
+    "card-cockroach card-dropbox card-cloudfare"
+    "card-meta card-microsoft card-wildlife"
+    "card-netflix card-riot card-salesforce"
+    "card-twitch card-twitter card-uber" !important;
+}
+
+.testimonial-quotes .container p {
+  font-size: 0.9rem;
+}
+
+.playground .container .playground-title h2 {
+  font-size: 2rem;
+}
+
+.possibilities .container .possibilities-go .possibilities-title h2 {
+  font-size: 1.5rem;
+}
+
+.possibilities .container .possibilities-go .possibilities-grid {
+  grid-template-areas:
+    "possibilities-cloud"
+    "possibilities-command"
+    "possibilities-code"
+    "possibilities-gear"
+    "possibilities-plane ";
+  justify-content: center;
+  /* gap: 2.5rem; */
+}
+
+.possibilities-card {
+  width: 50rem;
+  /* height: 40rem; */
+}
+.possibilities-card .more i:hover,
+.possibilities-card div .more-planes {
+  /* color: var(--gray-9);
+  background-color: var(--turq-dark); */
+  padding: 0.3rem 0.7rem;
+  width: 10rem;
+}
+
+.started .container {
+  grid-template-areas:
+    "started-intro started-intro "
+    "started-resources  started-training";
+  gap: 5rem;
+}
+
+.started .container .started-intro {
+  border-right: none;
+}
+
+.events {
+  height: 20rem;
+}
+.events .container {
+  overflow: hidden;
+  height: 100%;
+}
+
+.section-buttons {
+  width: 16rem;
+  /* display: flex; */
+}

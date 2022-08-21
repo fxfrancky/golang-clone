@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Material+Icons"
+    />
+    <title>The Go programming Language</title>
+    <meta
+      name="og:description"
+      content="Go is an open source programming language that makes it easy to build simple, reliable, and efficient software."
+    />
+    <meta
+      name="description"
+      content="Go is an open source programming language that makes it easy to build simple, reliable, and efficient software."
+    />
+    <link rel="stylesheet" href="css/theme.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="css/tablets.css"
+      media="screen and (max-width:768px)"
+    />
+    <link
+      rel="stylesheet"
+      href="css/mobile.css"
+      media="screen and (max-width:500px)"
+    />
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
+  </head>
+  <body>
+    <header id="main-header">
+      <a href="/"
+        ><img
+          loading="lazy"
+          src="img/go-logo-white.svg"
+          alt="https://go.dev/"
+          class="logo"
+      /></a>
+
+      <nav class="navbar">
+        <ul class="flex">
+          <li><a href="solutions.html">Why Go</a></li>
+          <li><a href="learn.html">Get Started</a></li>
+          <li class="current"><a href="docs.html">Docs</a></li>
+          <li><a href="packages.html">Packages</a></li>
+          <li><a href="play.html">Play</a></li>
+          <li><a href="blog.html">Blog</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="showcase">
+        <div class="container">
+          <div class="showcase-form">
+            <div class="showcase-form-text">
+              <h1>Build fast, reliable, and efficient software at scale</h1>
+              <div class="showcase-form-text-solutions">
+                <p>
+                  <i class="zmdi zmdi-check"></i> Go is an open source
+                  programming language supported by Google
+                </p>
+                <p>
+                  <i class="zmdi zmdi-check"></i> Easy to learn and get started
+                  with
+                </p>
+                <p>
+                  <i class="zmdi zmdi-check"></i> Built-in concurrency and a
+                  robust standard library
+                </p>
+                <p>
+                  <i class="zmdi zmdi-check"></i> Growing ecosystem of partners,
+                  communities, and tools
+                </p>
+                <div class="section-buttons">
+                  <a href="learn.html" class="btn btn-yellow">Get Started</a>
+                  <a href="download.html" class="btn btn-outline">Download</a>
+                </div>
+                <p class="text-s">
+                  Download packages for
+                  <span class="txt-underline">Windows 64-bit</span>,
+                  <span class="txt-underline">macOS</span>,
+                  <span class="txt-underline">Linux</span>, and
+                  <span class="txt-underline">more</span>
+                </p>
+                <p class="text-s">
+                  The go command by default downloads and authenticates modules
+                  using the Go module mirror and Go checksum database run by
+                  <br />
+                  Google. <span class="txt-underline">Learn more.</span>
+                </p>
+              </div>
+            </div>
+            <div class="img-showcase">
+              <img loading="lazy" src="img/ladder.svg" alt="image showcase" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="companies">
+        <div class="container">
+          <h2 class="text-l text-center text-dark">Companies using Go</h2>
+          <p class="text-center text-dark">
+            Organizations in every industry use Go to power their software and
+            services
+            <span><a href="#" class="text-primary">View all stories</a></span>
+          </p>
+          <div class="grid-container">
+            <div class="grid-card card card-google">
+              <img loading="lazy" src="img/google.svg" alt="Google" />
+            </div>
+            <div class="grid-card card card-paypal">
+              <img loading="lazy" src="img/paypal.svg" alt="Paypal" />
+            </div>
+            <div class="grid-card card card-amex">
+              <img
+                loading="lazy"
+                src="img/american-express.svg"
+                alt="American Express"
+              />
+            </div>
+            <div class="grid-card card card-mercadolibre">
+              <img
+                loading="lazy"
+                src="img/mercadolibre_light.svg"
+                alt="Mercado Libre"
+              />
+            </div>
+            <div class="grid-card card card-bitly">
+              <img loading="lazy" src="img/bitly.svg" alt="Bitly" />
+            </div>
+
+            <div class="grid-card card card-capitalone">
+              <img
+                loading="lazy"
+                src="img/capitalone_light.svg"
+                alt="Capital One"
+              />
+            </div>
+
+            <div class="grid-card card card-cockroach">
+              <img loading="lazy" src="img/cockroach.svg" alt="Cock Roach" />
+            </div>
+            <div class="grid-card card dropbox card-dropbox">
+              <img loading="lazy" src="img/dropbox.png" alt="DropBox" />
+            </div>
+            <div class="grid-card card card-cloudfare">
+              <img
+                loading="lazy"
+                src="img/cloudflare_light.svg"
+                alt="CloudFare"
+              />
+            </div>
+            <div class="grid-card card card-meta">
+              <img loading="lazy" src="img/meta_light.svg" alt="Meta" />
+            </div>
+            <div class="grid-card card card-microsoft">
+              <img
+                loading="lazy"
+                src="img/microsoft_light.svg"
+                alt="Microsoft"
+              />
+            </div>
+            <div class="grid-card card card-wildlife">
+              <img
+                loading="lazy"
+                src="img/wildlife_light.svg"
+                alt="Wild Life"
+              />
+            </div>
+            <div class="grid-card card card-netflix">
+              <img loading="lazy" src="img/netflix.svg" alt="NetFlix" />
+            </div>
+            <div class="grid-card card card-riot">
+              <img loading="lazy" src="img/riot_light.svg" alt="Riot" />
+            </div>
+            <div class="grid-card card card-salesforce">
+              <img loading="lazy" src="img/salesforce.svg" alt="SalesForce" />
+            </div>
+
+            <div class="grid-card card card-twitch">
+              <img loading="lazy" src="img/twitch.svg" alt="Twitch" />
+            </div>
+            <div class="grid-card card card-twitter">
+              <img loading="lazy" src="img/twitter.svg" alt="Twitter" />
+            </div>
+            <div class="grid-card card card-uber">
+              <img loading="lazy" src="img/uber_light.svg" alt="Uber" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="testimonial-quotes">
+        <div class="container">
+          <p class="main-quotes text-m2">
+            “At the time, no single team member knew Go, but
+            <strong>within a month, everyone was writing in Go</strong> <br />
+            and we were building out the endpoints. It was the flexibility, how
+            easy it was to use, and the really <br />
+            cool concept behind Go (how Go handles native concurrency, garbage
+            collection, and of course <br />
+            safety+speed.) that helped engage us during the build. Also, who can
+            beat that cute mascot!”
+          </p>
+          <p class="author">
+            — Jaime Enrique Garcia Lopez, Senior Software Development Manager at
+            Capital One
+          </p>
+        </div>
+      </section>
+
+      <section class="playground">
+        <div class="container">
+          <div class="playground-title">
+            <h2 class="text-l text-center">Try Go</h2>
+          </div>
+          <div class="playground-area">
+            <textarea
+              class="playground-area-text"
+              name="playground-area-text"
+              id="playground-area-text"
+              cols="30"
+              rows="10"
+            >
+  // You can edit this code!
+  // Click here and start typing.
+  package main
+
+  import "fmt"
+
+  func main() {
+    fmt.Println("Hello, 世界")
+  }
+            </textarea>
+            <!-- </div>
+          <div class="playground-output"> -->
+            <textarea
+              class="playground-output-text"
+              name="playground-output-text"
+              id="playground-output-text"
+              cols="30"
+              rows="4"
+            >
+            Hello, 世界
+
+            Program exited.</textarea
+            >
+          </div>
+          <div class="playground-choices">
+            <select name="playground-options" id="playground-options">
+              <option value="hello.go">Hello, World!</option>
+              <option value="life.go">Conway's Game of Life</option>
+              <option value="fib.go">Fibonacci Closure</option>
+              <option value="peano.go">Peano Integer</option>
+              <option value="pi.go">Concurent Prime Sieve</option>
+              <option value="tree.go">Tree, Comparison</option>
+            </select>
+            <ul class="playground-buttons">
+              <li>
+                <a href="#" class="playground-buttons btn playground-btn"
+                  >Run</a
+                >
+              </li>
+              <li>
+                <a href="#" class="playground-buttons btn playground-btn"
+                  >Share</a
+                >
+              </li>
+              <li>
+                <a href="#" class="playground-buttons btn playground-btn"
+                  >Run</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="possibilities">
+        <div class="container">
+          <div class="possibilities-go">
+            <div class="possibilities-title">
+              <h2 class="text-l text-center">What’s possible with Go</h2>
+              <p class="text-center">
+                Use Go for a variety of software development purposes
+              </p>
+            </div>
+
+            <div class="possibilities-grid">
+              <div class="possibilities-card possibilities-cloud">
+                <img loading="lazy" src="img/sphere.svg" alt=Cloud">
+                <h3>Cloud & Network Services</h3>
+                <p class="possibilities-text">
+                  With a strong ecosystem of tools and APIs on major cloud
+                  providers, it is easier than ever to build services with Go.
+                </p>
+                <p class="package">
+                  <img loading="lazy" src="img/package.svg" alt="package" />
+                  Popular Packages:
+                </p>
+                <ul>
+                  <li>
+                    <a href="https://cloud.google.com/go/home" target="_blank"
+                      >cloud.google.com/go</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://aws.amazon.com/sdk-for-go/" target="_blank"
+                      >aws/client</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://github.com/Azure/azure-sdk-for-go"
+                      target="_blank"
+                      >Azure/azure-sdk-for-go</a
+                    >
+                  </li>
+                </ul>
+                <a href="#" class="more"
+                  >Learn More
+                  <i class="material-icons WhyGo-forwardArrowIcon"
+                    >arrow_forward</i
+                  ></a
+                >
+              </div>
+              <div class="possibilities-card possibilities-command">
+                <img loading="lazy" src="img/command-folder.svg" alt=Command">
+                <h3>Command-line Interfaces</h3>
+                <p class="possibilities-text">
+                  With popular open source packages and a robust standard
+                  library, use Go to create fast and elegant CLIs.
+                </p>
+                <p class="package">
+                  <img loading="lazy" src="img/package.svg" alt="package" />
+                  Popular Packages:
+                </p>
+                <ul>
+                  <li>
+                    <a href="https://github.com/spf13/cobra" target="_blank">
+                      spf13/cobra
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/spf13/viper" target="_blank"
+                      >spf13/viper</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://github.com/urfave/cli" target="_blank"
+                      >urfave/cli</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://github.com/go-delve/delve" target="_blank"
+                      >delve</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://github.com/chzyer/readline" target="_blank"
+                      >chzyer/readline</a
+                    >
+                  </li>
+                </ul>
+                <a href="#" class="more"
+                  >Learn More
+                  <i class="material-icons WhyGo-forwardArrowIcon"
+                    >arrow_forward</i
+                  ></a
+                >
+              </div>
+              <div class="possibilities-card possibilities-code">
+                <img loading="lazy" src="img/code.svg" alt=Code"
+                class="img-code">
+                <h3>Web Development</h3>
+                <p class="possibilities-text">
+                  With enhanced memory performance and support for several IDEs,
+                  Go powers fast and scalable web applications.
+                </p>
+                <p class="package">
+                  <img loading="lazy" src="img/package.svg" alt="package" />
+                  Popular Packages:
+                </p>
+                <ul>
+                  <li>
+                    <a href="/pkg/net/http/" target="_blank">net/http</a>
+                  </li>
+                  <li>
+                    <a href="/pkg/html/template/" target="_blank"
+                      >html/template</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://github.com/flosch/pongo2" target="_blank"
+                      >flosch/pongo2</a
+                    >
+                  </li>
+                  <li>
+                    <a href="/pkg/database/sql/" target="_blank"
+                      >database/sql</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://github.com/olivere/elastic" target="_blank"
+                      >olivere/elastic</a
+                    >
+                  </li>
+                </ul>
+                <a href="#" class="more"
+                  >Learn More
+                  <i class="material-icons WhyGo-forwardArrowIcon"
+                    >arrow_forward</i
+                  ></a
+                >
+              </div>
+              <div class="possibilities-card possibilities-gear">
+                <img loading="lazy" src="img/gear.svg" alt=Gear">
+                <h3>DevOps & Site Reliability</h3>
+                <p class="possibilities-text">
+                  With fast build times, lean syntax, an automatic formatter and
+                  doc generator, Go is built to support both DevOps and SRE.
+                </p>
+                <p class="package">
+                  <img loading="lazy" src="img/package.svg" alt="package" />
+                  Popular Packages:
+                </p>
+                <ul>
+                  <li>
+                    <a
+                      href="https://github.com/opentracing/opentracing-go"
+                      target="_blank"
+                      >opentracing/opentracing-go</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://github.com/istio/istio" target="_blank"
+                      >istio/istio</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://github.com/urfave/cli" target="_blank"
+                      >urfave/cli</a
+                    >
+                  </li>
+                </ul>
+                <a href="#" class="more"
+                  >Learn More
+                  <i class="material-icons WhyGo-forwardArrowIcon"
+                    >arrow_forward</i
+                  ></a
+                >
+              </div>
+              <div class="possibilities-card possibilities-plane">
+                <img loading="lazy" src="img/biplane.svg" alt=Biplane"
+                class="plane">
+                <div>
+                  <a href="#" class="more-planes"
+                    >More use cases
+                    <i class="material-icons WhyGo-forwardArrowIcon"
+                      >arrow_forward</i
+                    ></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="events">
+        <div class="container">
+          <div class="events-grid">
+            <div class="events-grid-card">
+              <div class="img-wrapper">
+                <div class="img-box">
+                  <img
+                    loading="lazy"
+                    src="img/thumb_485661013.jpeg"
+                    alt="Baltimore"
+                  />
+                </div>
+              </div>
+              <div class="txt-wrapper">
+                <div class="events-grid-card-txt">
+                  <h5>UPCOMING EVENTS</h5>
+                  <a href="#" class="card-txt-main"
+                    >Baltimore Go Online <br />
+                    Monthly Meeting</a
+                  >
+                  <p>Aug 18, 2022 | Baltimore, MD USA</p>
+                  <a href="#" class="event-learn">Learn More</a>
+                </div>
+              </div>
+            </div>
+            <div class="events-grid-card">
+              <div class="img-wrapper">
+                <div class="img-box">
+                  <img
+                    loading="lazy"
+                    src="img/thumb_503221714.jpeg"
+                    alt="Building"
+                  />
+                </div>
+              </div>
+              <div class="txt-wrapper">
+                <div class="events-grid-card-txt">
+                  <h5>UPCOMING EVENTS</h5>
+                  <a href="#" class="card-txt-main"
+                    >Building micro services in <br />
+                    Go and deploying them to Kubernetes</a
+                  >
+                  <p>Aug 20, 2022 | Hyderabad, India</p>
+                  <a href="#" class="event-learn">Learn More</a>
+                </div>
+              </div>
+            </div>
+            <div class="events-grid-card">
+              <div class="img-wrapper">
+                <div class="img-box">
+                  <img loading="lazy" src="img/meetup.svg" alt="Meetup" />
+                </div>
+              </div>
+              <div class="txt-wrapper">
+                <div class="events-grid-card-txt">
+                  <h5>UPCOMING EVENTS</h5>
+                  <a href="#" class="card-txt-main"
+                    >Ukraine Go Meetup August <br />
+                    2022 [Online]</a
+                  >
+                  <p>Aug 23, 2022 | Kyiv, Ukraine</p>
+                  <a href="#" class="event-learn">Learn More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="started">
+        <div class="container">
+          <div class="started-intro">
+            <h2>Get started with Go</h2>
+            <p>
+              Explore a wealth of learning resources, including <br />
+              guided journeys, courses, books, and more.
+            </p>
+            <a href="#" class="btn btn-blue text-center">Get Started</a>
+            <a href="#" class="blue-link" text-center>Download Go</a>
+          </div>
+          <div class="started-resources">
+            <h5>RESOURCES TO START ON YOUR OWN</h5>
+            <a href="#">Guided learning journeys</a>
+            <p>Step-by-step tutorials to get your feet wet</p>
+            <a href="#">Online learning</a>
+            <p>Browse resources and learn at your own pace</p>
+            <a href="#">Featured books</a>
+            <p>Read through structured chapters and theories</p>
+            <a href="#">Cloud Self-paced labs</a>
+            <p>Jump in to deploying Go apps on GCP</p>
+          </div>
+          <div class="started-training">
+            <h5>IN-PERSON TRAININGS</h5>
+            <a href="#">Ardan Labs</a>
+            <p>Offering customized on-site live training classes.</p>
+            <a href="#">Gopher Guides</a>
+            <p>
+              Customized In-person, remote, and online training <br />
+              classes. Training for Developers by Developers.
+            </p>
+            <a href="#">Boss Sauce Creative</a>
+            <p>Personalized or track-based Go training for teams.</p>
+            <a href="#">Shiju Varghese</a>
+            <p>
+              On-site classroom training on Go and consulting on distributed
+              systems architectures, in India.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="main-footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="why-go">
+            <h3><a href="#">Why Go</a></h3>
+            <ul>
+              <li><a href="#">Use Cases</a></li>
+              <li><a href="#">Case Studies</a></li>
+            </ul>
+          </div>
+          <div class="get-started">
+            <h3><a href="#">Get Started</a></h3>
+            <ul>
+              <li><a href="#">Playground</a></li>
+              <li><a href="#">Tour</a></li>
+              <li><a href="#">Stack Overflow</a></li>
+              <li><a href="#">Help</a></li>
+            </ul>
+          </div>
+          <div class="packages">
+            <h3><a href="#">Packages</a></h3>
+            <a href="#">Standard Library</a>
+          </div>
+          <div class="about">
+            <h3><a href="#">About</a></h3>
+            <ul>
+              <li><a href="#">Download</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Issue Tracker</a></li>
+              <li><a href="#">Release Notes</a></li>
+              <li><a href="#">Brand Guidelines</a></li>
+              <li><a href="#">Code of Conduct</a></li>
+            </ul>
+          </div>
+          <div class="connect">
+            <h3><a href="#">Connect</a></h3>
+            <ul>
+              <li><a href="#">Twitter</a></li>
+              <li><a href="#">GitHub</a></li>
+              <li><a href="#">Slack</a></li>
+              <li><a href="#">r/golang</a></li>
+              <li><a href="#">Meetup</a></li>
+              <li><a href="#">Golang Weekly</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-down">
+        <div class="footer-down-left">
+          <img loading="lazy" src="img/pilot-bust.svg" alt="Pilot" />
+          <ul>
+            <li><a href="#">Copyright</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Report an Issue</a></li>
+            <li>
+              <img
+                loading="lazy"
+                src="img/light_mode_gm_grey_24dp.svg"
+                alt=""
+                class="light-mode"
+              />
+            </li>
+          </ul>
+        </div>
+        <div class="footer-down-right">
+          <img loading="lazy" src="img/google-white.png" alt="" />
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

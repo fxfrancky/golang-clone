@@ -1,0 +1,94 @@
+#main-header a .logo {
+  display: none;
+}
+
+#main-header {
+  padding-top: 3rem;
+  justify-content: center;
+  /* padding: 0.5rem 0; */
+}
+
+#main-header .navbar {
+  background-color: hsla(0, 0%, 0%, 0.2);
+  padding: 1rem 0.7rem;
+  border-radius: 5px;
+}
+#main-header .navbar li a {
+  padding: 0.5rem 0.5rem;
+  color: var(--gray-10);
+}
+
+.showcase {
+  height: 65vh;
+  padding-top: 0.7rem;
+}
+
+.showcase .container .showcase-form {
+  grid-template-areas: "showcase-form-text img-showcase";
+  gap: 1rem;
+}
+
+.showcase .container .showcase-form .showcase-form-text h1 {
+  font-size: 1.8rem;
+}
+
+.showcase
+  .container
+  .showcase-form
+  .showcase-form-text
+  .showcase-form-text-solutions
+  p {
+  font-size: 1.1rem;
+}
+
+.showcase .container .showcase-form .img-showcase img {
+  padding-top: 2rem;
+  width: 8rem;
+}
+
+.showcase
+  .container
+  .showcase-form
+  .showcase-form-text
+  .showcase-form-text-solutions
+  .section-buttons
+  a {
+  width: 100%;
+}
+
+.companies .container .grid-container .grid-card img {
+  width: 100%;
+  height: 40px;
+  margin: auto;
+}
+
+.playground .container .playground-choices {
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.playground .container .playground-choices ul {
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.possibilities-card {
+  width: 22rem;
+}
+
+.main-footer .footer-top .container {
+  grid-template-areas:
+    "why-go get-started"
+    "packages about"
+    "connect . ";
+}
+
+.main-footer .footer-down .footer-down-left img,
+.main-footer .footer-down .footer-down-right img,
+.main-footer .footer-down .footer-down-left ul li:last-child img {
+  display: none;
+}
+
+.main-footer .footer-down .footer-down-left ul li:nth-child(4) a {
+  border-right: none;
+}

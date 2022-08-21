@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Roboto&family=Staatliches&display=swap");
+
+:root {
+  /* Border */
+  --border: 0.0625rem solid var(--gray-7);
+  --border-s: 0.05px solid var(--gray-7);
+
+  /* Colors */
+  --primary-color: hsla(192, 100%, 31%, 0.75);
+  --gray-1: hsl(210, 6%, 13%);
+  --gray-2: hsl(0, 0%, 18%);
+  --gray-3: hsl(210, 2%, 34%);
+  --gray-4: hsl(210, 2%, 44%);
+  --gray-5: hsl(210, 2%, 53%);
+  --gray-6: hsl(210, 2%, 67%);
+  --gray-7: hsl(210, 4%, 78%);
+  --gray-8: hsl(210, 6%, 87%);
+  --gray-9: hsl(210, 7%, 95%);
+  --gray-10: hsl(0, 0%, 97%);
+  --turq-light: hsl(191, 70%, 63%);
+  --turq-med: hsl(197, 70%, 60%);
+  --turq-dark: hsl(192, 100%, 31%);
+  --abbey: hsl(220, 2%, 25%);
+  --blue: hsl(191, 71%, 85%);
+  --blue-light: #f2fafd;
+  --black-1: hsl(0, 0%, 0%);
+  --black-2: hsl(0, 0%, 7%);
+  --deep-cerulian: hsl(192, 100%, 31%);
+  --green: hsl(94, 73%, 25%);
+  --green-light: hsl(122, 62%, 61%);
+  --pink: hsl(344, 49%, 58%);
+  --pink-light: hsl(342, 81%, 96%);
+  --purple: hsl(270, 48%, 33%);
+  --shark: hsl(210, 4%, 18%);
+  --slate: hsl(210, 29%, 20%); /* Footer background. */
+  --tundora: hsl(0, 0%, 25%);
+  --white: hsl(0, 0%, 100%);
+  --yellow: hsl(52, 100%, 50%);
+  --yellow-light: #fff8cc;
+  --background-color: hsla(0, 0%, 97%, 0.9);
+  --playground-input-color: hsl(60, 100%, 93%);
+
+  --color-background-logo: var(--background-color);
+  --color-background-banner-secondary: var(--background-color);
+
+  --ff-primary: "Lato", sans-serif;
+  --ff-secondary: "Staatliches", cursive;
+
+  --fw-300: 300;
+  --fw-400: 400;
+  --fw-700: 700;
+
+  /* --max-width: 1100px; */
+  --max-width: 75.75rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--gray-2);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+body {
+  font-family: var(--ff-primary);
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  color: var(--gray-2);
+  line-height: 1.4;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: var(--max-width);
+  padding: 0 40px;
+  overflow: auto;
+}
+.footer-down {
+  margin: 0 auto;
+  max-width: 96vw;
+  overflow: auto;
+}
+
+img {
+  width: 100%;
+  display: inline-block;
+}
+
+p {
+  margin: 0.7rem 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0.7rem 0;
+  font-weight: var(--fw-300);
+  line-height: 1.2;
+}
+
+.btn {
+  padding: 10px 30px;
+  display: inline-block;
+  cursor: pointer;
+  color: var(--gray-9);
+  background-color: var(--primary-color);
+  border: none;
+}
+
+.btn:hover {
+  transform: scale(0.98);
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: var(--gray-10);
+  border: var(--border);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  height: 100%;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.card {
+  background-color: var(--gray-8);
+  color: var(--gray-2);
+  border-radius: 10px;
+  box-shadow: 0 3px 10px hsla(0, 0%, 0%, 0.2);
+  padding: 20px;
+  margin: 10px;
+}
+
+.grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+.grid-6 {
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.text-s {
+  font-size: 0.8rem;
+}
+
+.text-m1 {
+  font-size: 1.2rem;
+}
+.text-m2 {
+  font-size: 1.5rem;
+}
+
+.text-l {
+  font-size: 2.5rem;
+}
+
+.text-xl {
+  font-size: 3.5rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-dark {
+  color: var(--gray-2);
+}
+
+.text-primary {
+  color: var(--turq-med);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.btn-blue {
+  color: var(--gray-9);
+  background-color: var(--turq-dark);
+  padding: 0.3rem 0.7rem;
+  width: 10rem;
+}
+.btn-blue:hover {
+  text-decoration: none;
+}
+/* html {
+  font-size: 62.5%; }
+
+@media screen and (min-width: 30em) {
+  html {
+    font-size: 75%; } } */
+
+/* .button {
+  display: inline-block;
+  width: 100%;
+  min-height: 38px;
+  padding: 8px 30px;
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 4px;
+  border: 1px solid;
+  cursor: pointer;
+  box-sizing: border-box; }
+  .button:hover, .button:focus {
+    outline: 0; } */
