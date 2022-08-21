@@ -1,3 +1,16 @@
+.container {
+  max-width: 98vw !important;
+  padding: 0 20px;
+  overflow: auto;
+}
+.container .showcase-form {
+  max-width: 98vw !important;
+  overflow: none;
+}
+.container .showcase-form .showcase-buttom-text {
+  max-width: 20rem !important;
+  overflow: none;
+}
 #main-header a .logo {
   display: none;
 }
@@ -19,17 +32,79 @@
 }
 
 .showcase {
-  height: 65vh;
+  height: 45vh;
   padding-top: 0.7rem;
 }
 
 .showcase .container .showcase-form {
-  grid-template-areas: "showcase-form-text img-showcase";
+  display: grid;
+  /* grid-template-areas:
+    "showcase-form-text img-showcase"
+    /* "showcase-form-text img-showcase" */
+  /* "section-buttons  section-buttons"
+    "showcase-buttom-text showcase-buttom-text"; */
+  /* grid-auto-rows: auto;
+  grid-auto-columns: auto; */
+  /* gap: 1rem; */
+  /* color: var(--gray-10); */
+  /* max-width: 31.25rem !important; */
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "showcase-form-text"
+    "section-buttons"
+    "showcase-buttom-text";
   gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.showcase .container .showcase-form .showcase-form-text {
+  /* width: 100%; */
+  /* height: 40%; */
+  width: auto;
+}
+/* class="showcase-form-text-solutions" */
+.showcase .container .showcase-form .img-showcase img {
+  display: none;
+  /* padding-top: 2rem; */
+  /* height: 8rem; */
+}
+/* .showcase .container .showcase-form .showcase-form-text, */
+.showcase .container .showcase-form .section-buttons {
+  /* padding-top: 2rem; */
+  /* grid-template-columns: 1 / span 2; */
+  width: auto;
+}
+.showcase .container .showcase-form .img-showcase {
+  display: none;
+  /* width: 5rem; */
+  /* grid-column: 2 / span 1;
+  grid-row: 1 / span 1;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  height: auto; */
+}
+
+.showcase .container .showcase-form .section-buttons {
+  display: flex;
+  /* width: 100%; */
+}
+
+.showcase .container .showcase-form .section-buttons a {
+  font-size: 1.1rem;
+  padding: 6px 15px;
+  margin-right: 1rem;
+  display: inline-block;
+  width: 35vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .showcase .container .showcase-form .showcase-form-text h1 {
-  font-size: 1.8rem;
+  font-size: 1rem;
 }
 
 .showcase
@@ -38,12 +113,7 @@
   .showcase-form-text
   .showcase-form-text-solutions
   p {
-  font-size: 1.1rem;
-}
-
-.showcase .container .showcase-form .img-showcase img {
-  padding-top: 2rem;
-  width: 8rem;
+  font-size: 0.8rem;
 }
 
 .showcase
@@ -51,9 +121,21 @@
   .showcase-form
   .showcase-form-text
   .showcase-form-text-solutions
-  .section-buttons
-  a {
-  width: 100%;
+  p
+  i {
+  padding-right: 0.5rem;
+}
+
+.showcase .container .showcase-form .section-buttons a {
+  font-size: 1.1rem;
+  padding: 6px 10px;
+  margin-right: 1rem;
+  display: inline-block;
+  /* width: 10rem; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .companies .container .grid-container .grid-card img {

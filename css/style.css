@@ -45,17 +45,49 @@
   padding-top: 2rem;
 }
 
-.showcase .container {
-  /* background-color: brown; */
-}
 .showcase .container .showcase-form {
   display: grid;
-  grid-template-areas: "showcase-form-text showcase-form-text showcase-form-text showcase-form-text img-showcase";
-  gap: 1rem;
+  grid-template-areas:
+    "showcase-form-text img-showcase"
+    "section-buttons img-showcase"
+    "showcase-buttom-text img-showcase"
+    ". img-showcase";
+  grid-auto-rows: auto;
+  grid-auto-columns: auto;
+  gap: 0.5rem;
   color: var(--gray-10);
 }
 .showcase .container .showcase-form .showcase-form-text {
   grid-area: showcase-form-text;
+  /* height: 15rem; */
+}
+.showcase .container .showcase-form .section-buttons {
+  grid-area: section-buttons;
+  margin: 1.4rem 0;
+}
+.showcase .container .showcase-form .showcase-buttom-text {
+  grid-area: showcase-buttom-text;
+}
+.showcase .container .showcase-form .img-showcase {
+  grid-area: img-showcase;
+  width: 100%;
+  height: 100%;
+}
+
+.showcase .container .showcase-form .img-showcase img {
+  padding-top: 7rem;
+  width: 100%;
+}
+
+.showcase .container .showcase-form .section-buttons a {
+  font-size: 1.5rem;
+  border-radius: 5px;
+  padding: 12px 70px;
+  margin-right: 1rem;
+}
+
+.showcase .container .showcase-form .section-buttons a:hover {
+  text-decoration: none;
 }
 
 .showcase .container .showcase-form .showcase-form-text h1 {
@@ -69,48 +101,7 @@
   .showcase-form-text-solutions
   p
   i {
-  padding-right: 0.5rem;
-}
-
-.showcase .container .showcase-form .img-showcase {
-  grid-area: img-showcase;
-}
-
-.showcase .container .showcase-form .img-showcase img {
-  padding-top: 4rem;
-  width: 120%;
-}
-
-.showcase
-  .container
-  .showcase-form
-  .showcase-form-text
-  .showcase-form-text-solutions
-  .section-buttons {
-  margin: 1.4rem 0;
-}
-
-.showcase
-  .container
-  .showcase-form
-  .showcase-form-text
-  .showcase-form-text-solutions
-  .section-buttons
-  a {
-  font-size: 1.5rem;
-  border-radius: 5px;
-  padding: 12px 70px;
-  margin-right: 1rem;
-}
-
-.showcase
-  .container
-  .showcase-form
-  .showcase-form-text
-  .showcase-form-text-solutions
-  .section-buttons
-  a:hover {
-  text-decoration: none;
+  padding-right: 2rem;
 }
 
 .btn-yellow {
