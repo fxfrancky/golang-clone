@@ -16,8 +16,6 @@ body {
     "section-buttons img-showcase"
     "showcase-buttom-text img-showcase"
     ". img-showcase";
-  /* grid-auto-rows: auto;
-  grid-auto-columns: auto; */
   gap: 3rem;
   color: var(--gray-10);
 }
@@ -28,13 +26,11 @@ body {
 }
 .showcase .container .showcase-form .img-showcase {
   width: 100%;
-  /* width: 15rem; */
   padding-top: 15rem;
   margin-left: 2rem;
 }
 .showcase .container .showcase-form .section-buttons {
   display: flex;
-  /* width: auto; */
 }
 
 .showcase .container .showcase-form .section-buttons a {
@@ -84,17 +80,13 @@ body {
     "possibilities-gear"
     "possibilities-plane ";
   justify-content: center;
-  /* gap: 2.5rem; */
 }
 
 .possibilities-card {
   width: 50rem;
-  /* height: 40rem; */
 }
 .possibilities-card .more i:hover,
 .possibilities-card div .more-planes {
-  /* color: var(--gray-9);
-  background-color: var(--turq-dark); */
   padding: 0.3rem 0.7rem;
   width: 10rem;
 }
@@ -120,5 +112,4 @@ body {
 
 .section-buttons {
   width: 16rem;
-  /* display: flex; */
 }

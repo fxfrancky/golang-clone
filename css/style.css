@@ -59,7 +59,6 @@
 }
 .showcase .container .showcase-form .showcase-form-text {
   grid-area: showcase-form-text;
-  /* height: 15rem; */
 }
 .showcase .container .showcase-form .section-buttons {
   grid-area: section-buttons;
@@ -74,11 +73,6 @@
   height: 100%;
   padding-top: 7rem;
 }
-
-/* .showcase .container .showcase-form .img-showcase img {
-  padding-top: 7rem;
-  width: 100%;
-} */
 
 .showcase .container .showcase-form .section-buttons a {
   font-size: 1.5rem;
@@ -351,7 +345,6 @@
   border: var(--border);
   color: var(--turq-dark);
   padding: 0.15rem 0.5rem;
-  /* margin: 1rem; */
   margin-right: 0.5rem;
   font-size: 80%;
   border-radius: 3px;
@@ -533,12 +526,6 @@
   font-size: 0.8rem;
   color: var(--turq-dark);
 }
-/* <div class="events-grid-card-txt">
-                <h5>UPCOMING EVENTS</h5>
-                <a href="#">Baltimore Go Online Monthly Meeting</a>
-                <p>Aug 18, 2022 | Baltimore, MD USA</p>
-                <a href="#"> Learn More</a>
-              </div> */
 
 /** SECTION STARTED **/
 
