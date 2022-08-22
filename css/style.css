@@ -72,12 +72,13 @@
   grid-area: img-showcase;
   width: 100%;
   height: 100%;
+  padding-top: 7rem;
 }
 
-.showcase .container .showcase-form .img-showcase img {
+/* .showcase .container .showcase-form .img-showcase img {
   padding-top: 7rem;
   width: 100%;
-}
+} */
 
 .showcase .container .showcase-form .section-buttons a {
   font-size: 1.5rem;

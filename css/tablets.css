@@ -10,6 +10,7 @@ body {
 
 .showcase .container .showcase-form {
   display: grid;
+  grid-template-columns: 70% auto;
   grid-template-areas:
     "showcase-form-text img-showcase"
     "section-buttons img-showcase"
@@ -17,7 +18,7 @@ body {
     ". img-showcase";
   /* grid-auto-rows: auto;
   grid-auto-columns: auto; */
-  gap: 1rem;
+  gap: 3rem;
   color: var(--gray-10);
 }
 .showcase .container .showcase-form .showcase-form-text,
@@ -26,8 +27,10 @@ body {
   width: 40rem;
 }
 .showcase .container .showcase-form .img-showcase {
-  /* width: 100%; */
-  width: 15rem;
+  width: 100%;
+  /* width: 15rem; */
+  padding-top: 15rem;
+  margin-left: 2rem;
 }
 .showcase .container .showcase-form .section-buttons {
   display: flex;

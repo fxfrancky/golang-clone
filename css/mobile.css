@@ -32,7 +32,7 @@
 }
 
 .showcase {
-  height: 45vh;
+  height: 55vh;
   padding-top: 0.7rem;
 }
 
@@ -48,13 +48,13 @@
   /* gap: 1rem; */
   /* color: var(--gray-10); */
   /* max-width: 31.25rem !important; */
-  grid-template-columns: 1fr;
-  grid-template-areas:
-    "showcase-form-text"
-    "section-buttons"
-    "showcase-buttom-text";
-  gap: 1rem;
-  justify-content: center;
+  grid-template-columns: 20rem auto;
+  /* grid-template-areas:
+    "showcase-form-text img-showcase"
+    "section-buttons section-buttons"
+    "showcase-buttom-text showcase-buttom-text"; */
+  gap: 0.5rem;
+  /* justify-content: center; */
   align-items: center;
 }
 
@@ -65,7 +65,7 @@
 }
 /* class="showcase-form-text-solutions" */
 .showcase .container .showcase-form .img-showcase img {
-  display: none;
+  /* display: none; */
   /* padding-top: 2rem; */
   /* height: 8rem; */
 }
@@ -73,11 +73,16 @@
 .showcase .container .showcase-form .section-buttons {
   /* padding-top: 2rem; */
   /* grid-template-columns: 1 / span 2; */
-  width: auto;
+  /* grid-column: 2 / span 1; */
 }
 .showcase .container .showcase-form .img-showcase {
-  display: none;
-  /* width: 5rem; */
+  /* display: none; */
+  width: 5rem;
+  /* height: auto; */
+  padding: 0;
+  margin: 0;
+  padding-top: 3rem;
+  grid-row: 1 / span 1;
   /* grid-column: 2 / span 1;
   grid-row: 1 / span 1;
   margin: 0;
@@ -88,7 +93,17 @@
 
 .showcase .container .showcase-form .section-buttons {
   display: flex;
-  /* width: 100%; */
+  width: auto !important;
+  grid-column: 1 / span 2;
+}
+.showcase .container .showcase-form .showcase-buttom-text {
+  width: 40rem !important;
+  /* grid-template-columns: 1 / span 2; */
+  /* display: flex; */
+  grid-column: 1 / span 2;
+}
+.showcase .container .showcase-form .showcase-buttom-text p {
+  width: 26rem !important;
 }
 
 .showcase .container .showcase-form .section-buttons a {
@@ -96,7 +111,8 @@
   padding: 6px 15px;
   margin-right: 1rem;
   display: inline-block;
-  width: 35vw;
+  /* width: 40vw */
+  width: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
